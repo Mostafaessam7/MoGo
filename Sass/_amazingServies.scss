@@ -1,0 +1,20 @@
+.servies {
+    @extend %paddingtop;
+
+    .media i {
+        font-size: convertFont(40);
+        color: $blueColor;
+        margin-right: 1.5rem;
+    }
+
+    &__border {
+        height: 2px;
+        background: $textColor;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .servies__border {
+        display: none;
+    }
+}

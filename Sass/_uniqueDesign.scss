@@ -1,0 +1,30 @@
+.unique-design{
+    background-image:url("../images/divicebg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top; 
+    width: 100%;
+
+    .contain{
+        width: 100%;
+        background-color: rgba(237, 237, 237, 0.80);
+        
+    }
+    .tablet {
+        width: 380px;
+    }
+     .mobile {
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        margin-left: 120px;
+        width: 200px;
+    }
+    
+}
+@media (max-width: 575.98px) { 
+    .unique-design .mobile {
+        display: none;
+    }
+
+}

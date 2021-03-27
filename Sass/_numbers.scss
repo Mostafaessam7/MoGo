@@ -1,0 +1,40 @@
+.numbers {
+    font-family: "Montserrat";
+    background: $blueColor;
+    text-transform: uppercase;
+
+    h5 {
+        font: {
+            size: convertFont(60);
+            weight: 700;
+        }
+    }
+
+    h6 {
+        font: {
+            size: convertFont(14);
+            weight: 400;
+        }
+    }
+
+    .item {
+        width: 20%;
+        border-color: rgba(255, 255, 255, 0.719);
+    }
+}
+
+@media (min-width: 992px) {
+    .item {
+        border: none;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .numbers .item {
+        border: none !important;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+}

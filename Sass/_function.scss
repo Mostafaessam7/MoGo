@@ -1,0 +1,4 @@
+@function convertFont($value) {
+    $result : $value / 16;  
+    @return  #{$result}rem ;
+}

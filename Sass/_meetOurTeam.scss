@@ -1,0 +1,40 @@
+.team {
+    &__group {
+        position: relative;
+        margin-bottom:2rem;
+    }
+
+    &__overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(0deg, #f8dc79 0%, rgba(255, 0, 0, 0.45));
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .9s;
+    }
+    &__overlay i {
+        font-size: 1.5rem;
+        color: #f38181;
+        background: #fce38a;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        margin-right: 1px;
+    }
+    &__member:hover &__overlay {
+        opacity: 1;
+        box-shadow: .5rem .5em $blueColor;
+    }
+    &__overlay i:hover{
+        color: white;
+        background:#f38181;
+    }
+}

@@ -1,0 +1,45 @@
+.our-work{
+    &__group{
+            position:relative;
+        }
+    &__overlay {
+            position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:0;
+    background: linear-gradient(0deg, #f8dc79 0%, rgba(255, 0, 0, 0.45));
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .9s;
+}   
+        &__overlay i {
+            line-height: 40px;
+            text-align: center;
+            display: block;
+            margin: 2.5px;
+            font-size: convertFont(24);
+        }
+        &__item:hover &__overlay {
+        opacity: 1;
+    }
+    .monseratregular{
+        font: {
+            family: 'Montserrat';
+            size: convertFont(16);
+        }
+        text-transform: capitalize;
+    }
+    .robotolight{
+        font: {
+            family:  "Roboto";
+            weight: 300;
+            size: convertFont(14);
+        }
+    }
+}

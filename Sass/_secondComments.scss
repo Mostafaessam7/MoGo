@@ -1,0 +1,19 @@
+.media-comment{
+
+    &__redline{
+        height: 0.2rem;
+        width: 3.8rem;
+        display: inline-block;
+        margin-right: 1rem;
+        background: $redColor;
+    }
+    h6{
+        font-family:  "Kaushan Script";
+        font-size: convertFont(20);
+    }
+}
+@media (max-width: 575.98px) { 
+    #hiddenn {
+         display: none !important;
+     }
+ }

@@ -1,0 +1,55 @@
+.footer {
+    background-color: #f8f8f8;
+
+    & p:first-child{
+        color: #cccccc;
+        font: {
+         size: convertFont(46);
+        weight: 700;
+        family: "Montserrat";
+        }
+    }
+    h6{
+        margin-top: 40px;
+        color:$textColor;
+    }
+    &__number{
+        font: {
+           size: convertFont(18);
+           weight: 700;
+           family: "Montserrat";
+           }
+           color: rgb(56, 56, 56);
+    }
+    &__social a:first-child{
+        color:$textColor;
+        margin-right: 30px;
+    }
+    &__social i{
+        color: $blueColor;
+        margin-right: 8px;
+    }
+    form{
+        margin-top: 30px;
+        width: 90%;
+    }
+    button{
+        color: $whiteColor;
+        background-color: $blueColor;
+    }
+    &__blogs h6{
+        font-size: 12px;
+        line-height: 18px;
+        color: #333333;
+        font-weight: 300;
+        font-family: "Montserrat";
+        font-weight: bold;
+    } 
+    .spac{
+        padding: 0 1px 1px 0;
+        border:0 1px 1px 0 solid white ;
+    }
+    h5{
+        color: #333333; 
+    }
+}

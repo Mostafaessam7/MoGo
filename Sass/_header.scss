@@ -1,0 +1,82 @@
+.header {
+  background-image: linear-gradient(0deg, #f8dc79 0%, rgba(255, 0, 0, 0.45)),url("../images/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  color: $whiteColor;
+  padding-top: 50px;
+
+  h3 {
+    font-size: convertFont(60);
+    font-weight: 400;
+    font-family: "Kaushan Script";
+    text-align: center;
+    padding-top: convertFont(20);
+  }
+
+  h1 {
+    font-size: convertFont(150);
+    line-height: convertFont(140);
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    position: relative;
+  }
+
+  h1::after {
+    content: "";
+    height: 0.2rem;
+    width: 3.8rem;
+    display: block;
+    background: $whiteColor;
+    position: absolute;
+    margin: 10px auto;
+    left: 0;
+    right: 0;
+    margin-top: 0.4em;
+  }
+
+  button {
+    background: transparent;
+    border: 2px solid $whiteColor;
+    color: $whiteColor;
+    padding: 0.5em 1.5em;
+    margin: 7em 0px 8em;
+  }
+
+  p {
+    font-family: "Montserrat";
+  }
+
+  span {
+    font-size: convertFont(20);
+  }
+
+  .redColorLine {
+    opacity: 0;
+  }
+
+  li.active .redColorLine {
+    opacity: 1;
+  }
+
+  li:hover .redColorLine {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    display: none;
+  }
+  .responsiveP p {
+    font-size: convertFont(10);
+
+  }
+  .responsiveP span {
+    font-size: convertFont(15);
+
+  }
+}
+
+

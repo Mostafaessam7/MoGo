@@ -1,0 +1,51 @@
+.happy-clients{
+    background-image:url("../images/divicebg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top; 
+
+    &__content{
+        background-color: rgba(237, 237, 237, 0.80);
+        @extend %paddingtop;
+        
+    }
+    .image{
+        width: 100px;
+        height: 100px;
+    }
+    h6{
+        font: {
+            family: 'Montserrat';
+            size: convertFont(16);
+            weight: bold;
+        }
+        color: #333333;
+        line-height: 4px;
+        
+    }
+    .speial-p{
+        font: {
+            family:  "Roboto";
+            weight: 300;
+            size: convertFont(14);
+            style: italic;
+        }
+        line-height: 24px;
+        color: #333333;
+        position: relative;
+    }
+    .speial-p::after{
+        content: '';
+    height: 0.2rem;
+    width: 3.8rem;
+    display: block;
+    background: #f38181;
+    position: absolute;
+    margin: 10px 0;
+    left: 0;
+    right: 0;
+    }
+    .media-body p:last-child{
+        padding-top: 10px;
+    }
+}

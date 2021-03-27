@@ -1,0 +1,47 @@
+.blog {
+    &__image-data {
+        position: relative;
+    }
+    &__data {
+        position: absolute;
+        left: -10px;
+        bottom: 10px;
+        background: #95e1d3;
+        color: #fff;
+        text-align: center;
+        width: 70px;
+        height: 90px;
+        padding-top: 10px;
+    }
+
+    &__data p:first-child {
+        font-size: convertFont(30);
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Montserrat";
+        text-align: center;
+        line-height: 20px;
+        padding-top: 10px;
+
+    }
+
+    h6 {
+        font: {
+            family: 'Montserrat';
+            weight: 400;
+            size: convertFont(16);
+        }
+
+        line-height: 30px;
+
+    }
+
+    a {
+        margin-right: 12px;
+        color: $textColor;
+    }
+
+    i {
+        color: #95e1d3;
+    }
+}

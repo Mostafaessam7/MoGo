@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font : {
+        family: 'Montserrat','Kaushan Script','Roboto',cursive, sans-serif;
+    }
+    position: relative;
+}
+p{
+    color:$textColor;
+    font-size: convertFont(14);
+}
+h2{
+    color:$baseColor;
+    font-size: convertFont(30);
+font-weight: 700;
+font-family: "Montserrat";
+text-align: center;
+}
+h2::after{
+    content: '';
+        height: 0.2rem;
+        width: 3.8rem;
+        display: block;
+        background: $redColor;
+        position: absolute;
+        margin: 1.5rem auto ;
+        left: 0;
+        right: 0;
+}
+
+h3{
+    color:$baseColor;
+    font-size: convertFont(24);
+    font-weight: 400;
+    font-family: "Kaushan Script";
+    text-align: center;    
+}
+ul a{
+    font : {
+        family: 'Montserrat' !important;
+        size: 14px !important;
+  }   
+}
+a{
+    text-decoration: none !important;
+}
+#unslider-arrow{
+    color: black !important;
+}
+
+

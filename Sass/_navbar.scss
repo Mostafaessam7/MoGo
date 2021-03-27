@@ -1,0 +1,83 @@
+.navbar {
+    color: $whiteColor;
+
+    &-nav {
+        width: 60%;
+    }
+
+    .navbar-brand {
+        font-size: 2.25rem;
+    }
+
+    ul li a {
+        width: fit-content;
+    }
+
+    ul li a:active {
+        color: #fce38a;
+        border-color: #fce38a;
+        background: none;
+    }
+
+    ul li a:hover {
+        color: #fce38a;
+        border-color: #fce38a;
+        background: none;
+    }
+
+    .scroll:hover {
+        color: #fce38a !important;
+    }
+
+    .nav-link.active {
+        color: #fce38a !important;
+        border-bottom: 1px solid #fce38a;
+    }
+}
+
+.fixed-nav #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    overflow-x: hidden;
+    box-shadow: 0px 10px 30px #b4b3b396;
+    background: linear-gradient(135deg, #f8dc79 0%, rgba(241, 114, 114, 0.96));
+    z-index: 999;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}

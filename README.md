@@ -1,4 +1,3 @@
 # MoGo
 
-
-website link : https://mostafaessam7.github.io/MoGo/.
+**Go to a website** [Click Here](https://mostafaessam7.github.io/MoGo/)
